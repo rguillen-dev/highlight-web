@@ -6,6 +6,8 @@
 <title>Highlight — What matters, front and center.</title>
 <meta name="description" content="A beautiful timeline for birthdays, appointments, and every moment worth remembering. Highlight is the personal life event organizer for iPhone.">
 <meta name="theme-color" content="#02030F">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self'; script-src 'self'; form-action 'none';">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" type="image/png" href="assets/icon.png">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -227,24 +229,7 @@
     </div>
   </footer>
 
-  <script defer>
-    // Fade-in on scroll for screenshots
-    document.addEventListener('DOMContentLoaded', () => {
-      if (!('IntersectionObserver' in window)) {
-        document.querySelectorAll('.fade-in').forEach(el => el.classList.add('visible'));
-        return;
-      }
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.15 });
-      document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-    });
-  </script>
+  <script defer src="script.js"></script>
 
 </body>
 </html>
