@@ -17,15 +17,6 @@
         "@playwright/mcp@0.0.80"
       ],
       "env": {}
-    },
-    "axe": {
-      "type": "stdio",
-      "command": "npx",
-      "args": [
-        "-y",
-        "axe-mcp-server@1.5.0"
-      ],
-      "env": {}
     }
   }
 }
