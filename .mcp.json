@@ -3,19 +3,28 @@
     "chrome-devtools": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "chrome-devtools-mcp@latest"],
+      "args": [
+        "-y",
+        "chrome-devtools-mcp@1.9.0"
+      ],
       "env": {}
     },
     "playwright": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@playwright/mcp@latest"],
+      "args": [
+        "-y",
+        "@playwright/mcp@0.0.80"
+      ],
       "env": {}
     },
     "axe": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "axe-mcp-server"],
+      "args": [
+        "-y",
+        "axe-mcp-server@1.5.0"
+      ],
       "env": {}
     }
   }
