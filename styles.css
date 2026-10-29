@@ -488,7 +488,7 @@ img {
 @media (max-width: 1100px) {
   .hero h1 { font-size: 60px; }
   .features-grid { grid-template-columns: repeat(2, 1fr); }
-  .feature-card:last-child { grid-column: 1 / -1; max-width: 540px; margin: 0 auto; }
+  .feature-card:last-child:nth-child(odd) { grid-column: 1 / -1; max-width: 540px; margin: 0 auto; }
   .showcase-grid { grid-template-columns: 1fr; gap: 56px; }
   .showcase-item .device-frame { max-width: 320px; }
 }
