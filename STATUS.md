@@ -21,13 +21,16 @@ now that Highlight 1.0 is live. This repo has only `main` (no `develop`).
 
 ## Backlog
 
-- When Highlight v1.1 ships (HL-016 UI/UX revamp), refresh the screenshots and copy to match the new UI,
-  and review the privacy policy if v1.1 changes what data is handled (e.g. AI capture, once un-hidden).
+- Review the privacy policy if AI capture is un-hidden in a later Highlight version.
 - Decide whether to add a `develop` branch so this repo follows the same git flow as the others.
 - Crawl signals (robots.txt / AI-crawler preferences), if the bot-hygiene work from the agenda
   infra handoff is applied to the static sites too.
 
 ## Recently done
+
+- 2026-11-08 — **Highlight 1.1 refresh merged into `main`** (`chore/privacy-apple-watch`): new icon, 1.1
+  screenshots, Apple Watch and themes on the landing page; support FAQ (local storage, updates, watch app);
+  privacy covers Apple Watch sync. Highlight 1.1.0 went live 2026-11-06.
 
 - MCP setup for browser checks: chrome-devtools and playwright, pinned (axe removed: needs a paid Deque
   subscription); `performance-optimization` and `browser-testing-with-devtools` skills added.
